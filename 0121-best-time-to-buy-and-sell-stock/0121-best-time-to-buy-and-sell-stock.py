@@ -4,7 +4,7 @@ class Solution:
         lowest=100000000
         
         for x in prices:
-            found=True
+            
             if x<lowest:
                 lowest=x
             elif x-lowest>profit:

@@ -6,9 +6,9 @@ class Solution:
         prev_index = -1
         
         for i in range(len(s)):
-            char = s[i]
             
-            char_index = t.find(char, prev_index + 1)
+            
+            char_index = t.find(s[i], prev_index + 1)
             if char_index == -1:
                 return False
             
@@ -17,7 +17,7 @@ class Solution:
             
             prev_index = char_index
             
-            if s.count(char) > t.count(char):
+            if s.count(s[i]) > t.count(s[i]):
                 return False
         
         return True

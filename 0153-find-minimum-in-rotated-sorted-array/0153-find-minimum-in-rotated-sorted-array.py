@@ -17,4 +17,4 @@ class Solution:
             if nums[last]<nums[mid]:
                 first=mid
         
-        return nums[0]
+        
